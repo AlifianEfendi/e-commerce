@@ -1,7 +1,7 @@
 import AuthHeader from "../fragments/AuthHeader";
 import AuthIlustration from "../fragments/AuthIlustration";
 
-export default function AuthShell({ children, type }) {
+export default function AuthShell({ children }) {
     return (
         <div className="min-h-screen flex flex-col bg-gray-50">
             {/* Header */}

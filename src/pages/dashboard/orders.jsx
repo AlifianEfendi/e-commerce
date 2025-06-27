@@ -3,7 +3,7 @@ import DashboardShell from "../../components/layouts/DashboardShell";
 
 export default function ManageOrdersPage() {
     const [ isOpen, setIsOpen ] = useState(true);
-    const [activeTab, setActiveTab] = useState("true");
+    const [activeTab, setActiveTab] = useState("semua");
     const [searchTerm, setSearchTerm] = useState("");
     const [sortColumn, setSortColumn] = useState("");
     const [sortDirection, setSortDirection] = useState("asc");
