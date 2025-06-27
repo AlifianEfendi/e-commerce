@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Input({ children, name, title, type, placeholder, required=true, addStyle="px-4 py-3" }) {
+export default function Input({ children, name, title, type, placeholder, required=false, addStyle="px-4 py-3" }) {
     const [ showPassword, setShowPassword ] = useState(false);
 
     return (

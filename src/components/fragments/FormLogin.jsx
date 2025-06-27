@@ -1,7 +1,8 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Input from "../elements/Input";
 
 export default function FormLogin() {
+    const navigate = useNavigate();
     const handleSubmit = e => {
         e.preventDefault();
         const values = {
@@ -9,6 +10,7 @@ export default function FormLogin() {
             password: e.target.password.value,
             rememberMe: e.target.rememberMe.checked
         }
+        navigate("/dashboard");
     }
 
     return (

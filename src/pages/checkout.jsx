@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import PaymentShell from "../components/layouts/PaymentShell";
 import BoxLayout from "../components/layouts/BoxLayout";
 import ProductSummary from "../components/fragments/ProductSummary";
@@ -8,6 +8,7 @@ import SelectMethod from "../components/elements/SelectMethod";
 import OrderSummary from "../components/fragments/OrderSummary";
 
 export default function CheckoutPage() {
+    const navigate = useNavigate();
     const { state } = useLocation();
     const [quantity, setQuantity] = useState(state ? state[0].quantity : 1);
     const [selectedShipping, setSelectedShipping] = useState("regular");
@@ -29,6 +30,10 @@ export default function CheckoutPage() {
     const subtotal = productPrice * quantity;
     const shippingCost = shippingOptions[selectedShipping].price;
     const total = subtotal + shippingCost;
+
+    const handleConfirm = () => {
+        navigate('/payment-confirmation');
+    }
 
     return (
         <PaymentShell title="Checkout" metaTitle="Checkout | Dapur Mpo' Rita" >
@@ -103,7 +108,7 @@ export default function CheckoutPage() {
                         <BoxLayout title="Ringkasan Pembayaran" addStyle="sticky top-6">
                             <OrderSummary data={{ subtotal, shippingCost, total }} />
                         
-                            <button className="w-full bg-green-500 hover:bg-green-600 text-white py-3 px-6 rounded-lg font-medium flex items-center justify-center cursor-pointer !rounded-button whitespace-nowrap">
+                            <button onClick={handleConfirm} className="w-full bg-green-500 hover:bg-green-600 text-white py-3 px-6 rounded-lg font-medium flex items-center justify-center cursor-pointer !rounded-button whitespace-nowrap">
                                 Konfirmasi Pesanan
                             </button>
                         

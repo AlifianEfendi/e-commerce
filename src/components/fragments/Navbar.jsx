@@ -27,7 +27,7 @@ export default function Navbar({ cartCount }) {
                     )}
                 
                     {pathname !== `/product/${id}` && (
-                        <Link to="/" className={`${pathname === '/products' ? 'hidden md:flex' : 'flex'}  items-center`}>
+                        <Link to="/auth/login" className={`${pathname === '/products' ? 'hidden md:flex' : 'flex'}  items-center`}>
                             <img className='w-full max-w-17' src="./brand-logo.png" alt="Dapur Mpo' Rita" />
                         </Link>
                     )}
@@ -56,10 +56,6 @@ export default function Navbar({ cartCount }) {
                                         <i className="fas fa-search absolute left-3 top-3 text-gray-400"></i>
                                     </div>
                                 )}
-                            
-                                {/* <button className="relative text-gray-700 translate-x-0.5 mb-[3px]">
-                                    <i className="fas fa-heart text-2xl"></i>
-                                </button> */}
                             
                                 <button className="relative text-gray-700">
                                     <i className="fas fa-shopping-cart text-2xl"></i>

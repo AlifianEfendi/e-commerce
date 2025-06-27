@@ -3,9 +3,6 @@ export const chartOption = {
     tooltip: {
         trigger: "axis",
     },
-    legend: {
-        data: "Penjualan",
-    },
     grid: {
         left: "3%",
         right: "4%",
@@ -25,7 +22,10 @@ export const chartOption = {
         type: "line",
         stack: "Total",
         data: [23, 32, 11, 34, 20, 25, 10],
-        smooth: true,
+        smooth: false,
+        areaStyle: {
+            color: "rgba(79, 70, 229, 0.2)",
+        },
         lineStyle: {
             width: 3,
             color: "#4F46E5",
