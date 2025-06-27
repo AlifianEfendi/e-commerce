@@ -28,7 +28,7 @@ export default function Navbar({ cartCount }) {
                 
                     {pathname !== `/product/${id}` && (
                         <Link to="/" className={`${pathname === '/products' ? 'hidden md:flex' : 'flex'}  items-center`}>
-                            <img className='w-full max-w-17' src="/brand-logo.png" alt="Dapur Mpo' Rita" />
+                            <img className='w-full max-w-17' src="./brand-logo.png" alt="Dapur Mpo' Rita" />
                         </Link>
                     )}
                 

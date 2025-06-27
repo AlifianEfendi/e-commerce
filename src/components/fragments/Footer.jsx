@@ -4,7 +4,7 @@ export default function Footer() {
             <div className="mx-auto px-4 sm:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-y-8 md:gap-y-0 md:gap-x-8 mb-8">
                     <div className=" flex flex-col items-center text-center md:text-start md:items-start">
-                        <img className='max-w-22' src="/utility/brand-logo.png" />
+                        <img className='max-w-22' src="./utility/brand-logo.png" />
                     
                         <p className="text-gray-500 mb-4">Menyediakan berbagai produk frozen food berkualitas untuk kebutuhan kuliner Anda.</p>
                     

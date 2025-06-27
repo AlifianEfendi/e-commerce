@@ -3,7 +3,7 @@ export default function HeroSection() {
         <>
         <section className="relative bg-gradient-to-r from-green-600 to-red-600 overflow-hidden text-white bg-white">
             <div className="absolute inset-0 opacity-20">
-                <img src="/utility/hero-background.jpg" className='w-full h-full object-cover object-center'/>
+                <img src="./utility/hero-background.jpg" className='w-full h-full object-cover object-center'/>
             </div>
         
             <div className="container mx-auto px-4 py-16 md:py-24 relative z-10">
@@ -29,7 +29,7 @@ export default function HeroSection() {
                 
                     <div className="hidden w-full md:w-1/2 md:flex justify-center md:justify-end">
                         <img
-                            src="/utility/hero-image.jpg"
+                            src="./utility/hero-image.jpg"
                             className="rounded-lg shadow-2xl max-w-full h-auto"
                         />
                     </div>

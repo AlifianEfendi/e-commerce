@@ -3,7 +3,7 @@ export default function AuthIlustration() {
         <div className="hidden md:block md:w-1/2 bg-green-50 relative overflow-hidden">
             <div className="absolute inset-0 flex items-center justify-center p-8">
                 <img 
-                    src="/utility/auth-ilustration.jpg" 
+                    src="./utility/auth-ilustration.jpg" 
                     className="object-cover rounded-lg shadow-md max-w-full max-h-full"
                 />
             </div>
