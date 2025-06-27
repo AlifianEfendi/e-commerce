@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --color-light-primary: #ffffff; 
+  --color-light-secondary: #f9fafb;
+  --color-accent-green: #16a34a;
+  --color-accent-red: #ef4444;
+  --color-accent-blue: #2563eb;
+  --color-dark-primary: #1f2937;
+  --color-dark-secondary: #4b5563;
+  --animate-float-slow : float-slow 3s ease-in-out infinite;
+  --animate-float-medium : float-medium 2.5s ease-in-out infinite;
+  --animate-float-fast : float-fast 2s ease-in-out infinite;
+
+  @keyframes float-slow {
+  0%, 100% { transform: translateY(0) rotate(-12deg); }
+  50% { transform: translateY(-15px) rotate(5deg); }
+  }
+  @keyframes float-medium {
+  0%, 100% { transform: translateY(0) rotate(45deg); }
+  50% { transform: translateY(-20px) rotate(30deg); }
+  }
+  @keyframes float-fast {
+  0%, 100% { transform: translateY(0) rotate(-12deg); }
+  50% { transform: translateY(-25px) rotate(12deg); }
+  }
+}
+
+button {
+  @apply cursor-pointer;
+}
+
+section {
+  @apply container mx-auto px-4 lg:px-8;
+}
+
+.no-scrollbar::webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

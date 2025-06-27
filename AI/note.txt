@@ -1,0 +1,50 @@
+Pengguna mengklik menu "Promo" di sidebar navigasi. Pengguna ingin beralih dari halaman Pesanan ke halaman Promo untuk mengelola promosi produk.
+
+1. Layout Dasar
+
+Halaman menggunakan layout yang sama dengan halaman pesanan, terdiri dari:
+
+Sidebar navigasi di sebelah kiri
+Area konten utama di sebelah kanan dengan header dan main content
+2. Sidebar Navigasi
+
+Mempertahankan sidebar yang sama dengan halaman pesanan, termasuk:
+
+Logo dan nama brand di bagian atas
+Menu navigasi dengan item yang sama
+Menu Promo dalam keadaan aktif/terpilih
+Tombol logout di bagian bawah
+3. Header
+
+Header berisi:
+
+Judul halaman Promo
+Search bar untuk mencari promo
+Notifikasi dan profil admin
+4. Konten Utama
+
+Area konten utama terdiri dari:
+
+Tombol Tambah Promo di bagian atas
+Filter status promo (Aktif, Kadaluarsa, Akan Datang)
+Tabel daftar promo dengan kolom:
+Kode Promo
+Nama Promo
+Diskon
+Tanggal Mulai
+Tanggal Berakhir
+Status (dengan indikator warna)
+Aksi (tombol edit dan hapus)
+Pagination di bagian bawah tabel
+5. Fitur Interaktif
+
+Tombol Tambah Promo membuka form modal
+Kolom tabel dapat diurutkan (sortable)
+Status promo ditampilkan dengan badge berwarna
+Tombol aksi untuk edit dan hapus promo
+Link ke halaman pesanan (original page) melalui menu sidebar
+6. Responsivitas
+
+Layout responsif menggunakan grid system
+Tabel horizontal scrollable pada layar kecil
+Sidebar dapat di-collapse pada mobile view
